@@ -1,0 +1,19 @@
+.header{
+    background: url("https://i.pinimg.com/564x/00/f0/1e/00f01e2ed2b8b493fb398d3227807a09.jpg");
+    background-size: contain;
+    height: 230px;
+    font-size: 42px;
+    color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul li a {
+    text-transform: uppercase;
+}
+.container {
+    background-image: url("static/swimming_pool_6031-original.webp");
+}
+
+
