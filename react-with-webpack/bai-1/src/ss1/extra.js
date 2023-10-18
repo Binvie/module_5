@@ -1,8 +1,8 @@
 //bai 1
-let checkPrime = (a => {
+let checkPrime = (number => {
     let count = 0;
-    for (let i = 2; i <= a; i++) {
-        if (a % i == 0) {
+    for (let i = 2; i <= number; i++) {
+        if (number % i == 0) {
             count++;
         }
     }
@@ -36,18 +36,22 @@ const person = {
         university: 'Harvard University',
     }
 }
-    let student = {
-    firstName : person.firstName,
+const student = {
+    firstName: person.firstName,
     gender: person.gender,
     degree: person.education.degree,
     english: 'english'
-    };
+};
 console.log(student)
 
+// cach 2
+const {firstName, gender} = person
+const student1 = {firstName, gender}
+console.log(student1)
 
 //bai 3
 
-let result3 = ({firstName='Quan',degree = 'NA'}) =>{
+const result3 = ({firstName = 'Quan', degree = 'NA'}) => {
     console.log(firstName)
     console.log(degree)
 }
