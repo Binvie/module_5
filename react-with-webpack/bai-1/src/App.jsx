@@ -49,11 +49,11 @@ function App() {
                 </tr>
                 </thead>
                 <tbody>
-                {students.map(stu =>(
-                    <tr>
-                        <td>{stu.company}</td>
-                        <td>{stu.contact}</td>
-                        <td>{stu.country}</td>
+                {students.map((student,index) =>(
+                    <tr key={index}>
+                        <td>{student.company}</td>
+                        <td>{student.contact}</td>
+                        <td>{student.country}</td>
                     </tr>
                 ))}
                 </tbody>

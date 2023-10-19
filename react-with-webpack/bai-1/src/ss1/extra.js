@@ -51,7 +51,7 @@ console.log(student1)
 
 //bai 3
 
-const result3 = ({firstName = 'Quan', degree = 'NA'}) => {
+const result = ({firstName = 'Quan', degree = 'NA'}) => {
     console.log(firstName)
     console.log(degree)
 }

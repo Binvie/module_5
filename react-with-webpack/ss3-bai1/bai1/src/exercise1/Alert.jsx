@@ -1,5 +1,6 @@
 import React,{ Component }  from "react";
 
-function Alert(Props) {
-    
+export function Alert(Props) {
+    return Props.text;
 }
+

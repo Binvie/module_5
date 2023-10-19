@@ -1,0 +1,12 @@
+table {
+    align-items: center;
+    border-spacing: 10px;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+
+
+tr , td {
+    padding: 10px;
+}

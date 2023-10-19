@@ -15,7 +15,18 @@ class Background extends Component {
     }
     render() {
         return (
-
+            <div>
+                <div style={{
+                    backgroundColor: this.state.color,
+                    paddingTop: 20,
+                    width: 400,
+                    height: 80,
+                    margin: 'auto'
+                }}>
+                </div>
+            </div>
         );
     }
 }
+
+export default Background;
