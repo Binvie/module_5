@@ -2,7 +2,7 @@ import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Student from "./student/StudentInfoComponent";
+import studentList from "./student/StudentInfoComponent";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -17,7 +17,7 @@ function App() {
                         <td>Age</td>
                         <td>Address</td>
                     </tr>
-                    {Student.map((student) => (
+                    {studentList.map((student) => (
                         <tr key={student.id}>
                             <td>{student.id}</td>
                             <td>{student.name}</td>

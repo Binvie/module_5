@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-const Student = [
+const studentList = [
     {
         id: 1,
         name: 'Le Cong Hoan Thien',
@@ -24,4 +24,4 @@ const Student = [
     }
 ]
 
-export default Student;
+export default studentList;

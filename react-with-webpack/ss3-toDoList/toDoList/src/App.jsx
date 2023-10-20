@@ -2,10 +2,11 @@ import React, {Component, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ToDoList from "./components/ToDoList";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             list: [],
             item: ""
@@ -16,6 +17,7 @@ class App extends Component {
         this.setState({item: event})
 
     }
+
     handleAddItem() {
         console.log(this.state.item);
         if (this.state.item !== "") {
@@ -30,17 +32,9 @@ class App extends Component {
 
     render() {
         return (
-            <div>
-                <h1>TO DO LIST</h1>
-                <input type="text" value={this.state.item} onChange={(event) => {this.HandleChange(event.target.value)}}/>
-                <input type="button" value="Add" onClick={() => this.handleAddItem()}/>
-                <ul>
-                    {this.state.list.map((item, index) => (
-                        <li key={index}>{item}</li>
-                        )
-                    )}
-                </ul>
-            </div>
+            <>
+                <ToDoList/>
+            </>
         )
     }
 }
