@@ -5,6 +5,11 @@ import CounterTwo from "./components/CounterTwo";
 
 function App() {
     const [count, setCount] = useState(0)
+
+    const increase = (addAmount) => {
+        setCount(addAmount + 1);
+    }
+
     return (
         <>
             <CounterOne/>
