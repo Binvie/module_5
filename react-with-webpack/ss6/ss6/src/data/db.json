@@ -2,8 +2,8 @@
   "customer": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "json-server",
+      "hobbies": "typicode"
     }
   ],
   "facilities": [
