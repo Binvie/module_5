@@ -1,0 +1,16 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "brand": "typicode"
+    }
+  ]
+}

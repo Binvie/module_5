@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
-
+import {UseIncrease} from "./UseIncrease.jsx";
 function CounterTwo() {
-    const [count, setCount] = useState(0);
-    const increase = () => {
-        setCount(count + 2);
-    }
+    const [count, setCount] = UseIncrease(2);
     return(
         <div>
             count: {count};

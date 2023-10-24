@@ -1,16 +1,17 @@
 import React, {useState} from 'react';
+import {UseIncrease} from "./UseIncrease.jsx";
 
-function CounterOne() {
-    const [count, setCount] = useState(0);
-    const increase = () => {
-        setCount(count + 1);
-    }
-    return(
+export function CountOne() {
+    const [count, setCount] = UseIncrease(1)
+
+    return (
         <div>
-            count: {count};
-            <button onClick={increase}>Add 1</button>
+            Count: {count}
+            <div>
+                <button onClick={setCount}>Add 1</button>
+            </div>
         </div>
-    );
+    )
 }
 
 export default CounterOne;
