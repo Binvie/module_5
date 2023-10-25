@@ -1,0 +1,139 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Le Cong Hoan Thien",
+      "age": 30,
+      "address": "Ha Noi"
+    },
+    {
+      "id": 2,
+      "name": "Phan Quoc Sang",
+      "age": 20,
+      "address": "Quang Binh"
+    },
+    {
+      "id": 3,
+      "name": "Vo Nhan Tri",
+      "age": 27,
+      "address": "Sai Gon"
+    },
+    {
+      "id": 4,
+      "name": "Nguyen Dinh Thoi",
+      "age": 25,
+      "address": "Hoi An"
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "name": "Le Cong Hoan Thien",
+      "age": 30,
+      "address": "Ha Noi"
+    },
+    {
+      "id": 2,
+      "name": "Phan Quoc Sang",
+      "age": 20,
+      "address": "Quang Binh"
+    },
+    {
+      "id": 3,
+      "name": "Vo Nhan Tri",
+      "age": 27,
+      "address": "Sai Gon"
+    },
+    {
+      "id": 4,
+      "name": "Nguyen Dinh Thoi",
+      "age": 25,
+      "address": "Hoi An"
+    }
+  ],
+  "facility": [
+    {
+      "id": 1,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "poolArea": 40,
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room1.jpg"
+    },
+    {
+      "id": 2,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "poolArea": 40,
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room2.jpg"
+    },
+    {
+      "id": 3,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "poolArea": 40,
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room3.jpg"
+    },
+    {
+      "id": 4,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "poolArea": 40,
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room4.jpg"
+    },
+    {
+      "id": 5,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "poolArea": 40,
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room5.jpg"
+    },
+    {
+      "id": 6,
+      "serviceName": "Villa",
+      "area": 500,
+      "rentalCost": "2000",
+      "maxCapacity": 6,
+      "rentalType": "Tháng",
+      "roomStandard": "Vip",
+      "amenities": "Buffet sáng",
+      "floors": 3,
+      "freeServices": "",
+      "img": "src/assets/img/rooms/room6.jpg"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "HaiTT",
+      "age": 18,
+      "gender": 1,
+      "languages": [
+        "C#"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "CongNT",
+      "age": 18,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "Java"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "TrungDP",
+      "age": 18,
+      "gender": 1,
+      "languages": [
+        "C#"
+      ]
+    },
+    {
+      "name": "ChanhTV",
+      "age": 29,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA",
+        "ReactJS"
+      ],
+      "id": 4
+    },
+    {
+      "name": "PhuongTD",
+      "age": 18,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA"
+      ],
+      "id": 5
+    },
+    {
+      "name": "TienNVT",
+      "age": 20,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA",
+        "ReactJS"
+      ],
+      "id": 6
+    },
+    {
+      "name": "TienNVT",
+      "age": 20,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA",
+        "ReactJS"
+      ],
+      "id": 7
+    },
+    {
+      "name": "TrungDC",
+      "age": 25,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA",
+        "ReactJS"
+      ],
+      "id": 8
+    },
+    {
+      "name": "akgdahsdgas",
+      "age": 24,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA"
+      ],
+      "id": 9
+    },
+    {
+      "name": "sdfdg",
+      "age": 19,
+      "gender": 1,
+      "languages": [
+        "C#",
+        "JAVA",
+        "ReactJS"
+      ],
+      "id": 10
+    },
+    {
+      "name": "ThaoTP",
+      "age": 24,
+      "gender": 0,
+      "languages": [],
+      "id": 11
+    }
+  ]
+}
