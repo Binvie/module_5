@@ -1,39 +1,42 @@
 import React, {useState} from "react";
 import {NavLink, useNavigate} from "react-router-dom";
 import {ErrorMessage, Field, Form, Formik} from "formik";
+import {toast} from "react-toastify";
+import {createBook} from "../service/BookService.jsx";
 
 export function CreateBook() {
     const navigate = useNavigate();
 
     const addBook = async (value) => {
-        const book = {...value};
-        await addBook(book);
+        await createBook(value);
+        navigate("/books")
+        toast("Thành Công")
     }
     return (
         <>
             <h1 className="text text-center text-primary">Create New Book</h1>
-            <NavLink to="/books">
-                <button>Back to List</button>
-            </NavLink>
             <Formik initialValues={{
                 title: "",
                 quantity: 0
-            }} onSubmit={(values) => {
-                addBook(values)
-                navigate("/list")
+            }} onSubmit={async (values) => {
+                await addBook(values)
             }}>
                 <div className='container'>
                     <Form>
                         <div className='mb-3'>
-                            <label htmlFor='studentName' className='form-label'>Title</label>
-                            <Field type='text' name="title" className='form-control' id='studentName'/>
+                            <label htmlFor='title' className='form-label'>Title</label>
+                            <Field type='text' name="title" className='form-control' id='title'/>
                         </div>
                         <div className='mb-3'>
-                            <label htmlFor='studentAge' className='form-label'>Quantity</label>
-                            <Field type='text' name="quantity" className='form-control' id='studentAge'/>
+                            <label htmlFor='quantity' className='form-label'>Quantity</label>
+                            <Field type='text' name="quantity" className='form-control' id='quantity'/>
                         </div>
                         <button type='submit' className='btn btn-primary'>Submit</button>
+
                     </Form>
+                    <NavLink to="/books">
+                        <button className="btn btn-primary">Back to List</button>
+                    </NavLink>
                 </div>
             </Formik>
         </>
