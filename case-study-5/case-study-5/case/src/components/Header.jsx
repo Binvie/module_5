@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 function Header(props) {
@@ -15,10 +16,11 @@ function Header(props) {
                         </a>
 
                         <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="/" className="nav-link px-2 text-secondary">Furama Resort</a></li>
-                            <li><a href="#" className="nav-link px-2 text-white">Types</a></li>
-                            <li><a href="#" className="nav-link px-2 text-white">Facilities</a></li>
-                            <li><a href="#" className="nav-link px-2 text-white">Contact</a></li>
+                            <Link><li><a href="/" className="nav-link px-2 text-secondary">Furama Resort</a></li></Link>
+                            <Link><li><a href="types" className="nav-link px-2 text-white">Types</a></li></Link>
+                            <Link><li><a href="/facility" className="nav-link px-2 text-white">Facilities</a></li></Link>
+                            <Link><li><a href="/contract" className="nav-link px-2 text-white">Contact</a></li></Link>
+                            <Link><li><a href="/customer" className="nav-link px-2 text-white">Customer</a></li></Link>
                         </ul>
 
                         <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
