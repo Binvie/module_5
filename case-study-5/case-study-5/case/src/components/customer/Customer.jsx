@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useNavigate, NavLink} from "react-router-dom";
+import {useNavigate, NavLink, useParams} from "react-router-dom";
 import {deleteCustomerService, getAllCustomer} from "../../service/CustomerService.jsx";
 import {toast} from "react-toastify";
 import Header from "../Header.jsx";
@@ -7,7 +7,6 @@ import Footer from "../Footer.jsx";
 import {Button, Modal} from "react-bootstrap";
 
 function Customer() {
-    // const navigate = useNavigate();
     const [show, setShow] = useState(false);
     const [myModal, setMyModal] = useState({});
     const [list, setList] = useState([])
@@ -28,9 +27,7 @@ function Customer() {
 
     const showList = async () => {
         const res = await getAllCustomer()
-        // console.log(res)
         setList(res)
-        console.log(res)
     }
     const deleteCustomer = async (data) => {
         const res = await deleteCustomerService(data.id);
@@ -44,7 +41,9 @@ function Customer() {
         <div>
             <Header/>
             <h1 className="text text-center text-dark">Customer List</h1>
-            <button className="btn btn-primary btn-sm">Create new Customer</button>
+            <NavLink to="/customers/create">
+                <button className="btn btn-primary btn-sm">Create new Customer</button>
+            </NavLink>
             <table className="table table-hover">
                 <thead>
                 <tr>
@@ -66,24 +65,25 @@ function Customer() {
                         <td>{index + 1}</td>
                         <td>{customer.name}</td>
                         <td>{customer.birthday}</td>
-                        <td>{customer.gender}</td>
+                        <td>{customer.gender === 1 ? "Male" : "Female"}</td>
                         <td>{customer.idCard}</td>
                         <td>{customer.phone}</td>
                         <td>{customer.email}</td>
                         <td>{customer.typeCustomer.name}</td>
                         <td>{customer.address}</td>
                         <td>
-                                <div className="d-flex">
-                                    <NavLink to={`/customer/edit/${list.id}`}
-                                             className="btn btn-primary btn-sm me-3">Edit
-                                    </NavLink>
-                                    <button className="btn btn-danger btn-sm" onClick={() => handleShow(list)}>
-                                        Delete
-                                    </button>
-                                    <Modal show={show} onHide={handleClose}>
-                                        <MyModal action={handleClose} data={myModal}/>
-                                    </Modal>
-                                </div>
+                            <div className="d-flex">
+                                <NavLink to={`/customers/edit/${customer.id}`}
+                                         className="text-dark me-3">
+                                    <i className="fa-solid fa-user-pen"></i>
+                                </NavLink>
+                                <a role="button" className="text-danger btn-sm" onClick={() => handleShow(customer)}>
+                                    <i className="fa-solid fa-trash"></i>
+                                </a>
+                                <Modal show={show} onHide={handleClose}>
+                                    <MyModal action={handleClose} data={myModal}/>
+                                </Modal>
+                            </div>
                         </td>
                     </tr>
                 ))}
@@ -97,9 +97,9 @@ function Customer() {
         return (
             <>
                 <Modal.Header closeButton>
-                    <Modal.Title>{data.title}</Modal.Title>
+                    <Modal.Title>{data.name}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Are you sure to delete {data.title}!</Modal.Body>
+                <Modal.Body>Are you sure to delete {data.name}!</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={action}>
                         Close
@@ -112,4 +112,5 @@ function Customer() {
         )
     }
 }
+
 export default Customer;

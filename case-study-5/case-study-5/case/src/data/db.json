@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Nguyễn Văn A",
       "birthday": "1990-05-15",
-      "gender": "Female",
+      "gender": 0,
       "idCard": "123456789",
       "phone": "0901234567",
       "email": "nguyenvana@example.com",
@@ -18,7 +18,7 @@
       "id": 2,
       "name": "Trần Thị B",
       "birthday": "1985-02-20",
-      "gender": "Female",
+      "gender": 0,
       "idCard": "987654321",
       "phone": "0912345678",
       "email": "tranthib@example.com",
@@ -32,7 +32,7 @@
       "id": 3,
       "name": "Lê Văn Cu",
       "birthday": "1992-09-10",
-      "gender": "Male",
+      "gender": 1,
       "idCard": "567890123",
       "phone": "0907654321",
       "email": "levanc@example.com",
@@ -45,7 +45,7 @@
     {
       "name": "Bui Huu Hai",
       "birthday": "2023-09-14",
-      "gender": "Female",
+      "gender": 1,
       "idCard": "123123123123",
       "phone": "0902409424",
       "email": "buihuuhai318@gmail.com",
@@ -59,7 +59,7 @@
     {
       "name": "Le Cong Hoan Thien",
       "birthday": "2023-09-30",
-      "gender": "Female",
+      "gender": 1,
       "idCard": "123123123123",
       "phone": "0902409424",
       "email": "buihuuhai318@gmail.com",
@@ -69,6 +69,20 @@
         "name": "Gold"
       },
       "id": 5
+    },
+    {
+      "name": "Thiện Lê",
+      "birthday": "2023-10-13",
+      "gender": "1",
+      "idCard": "123",
+      "phone": "+84935131657",
+      "email": "thien97.night1@gmail.com",
+      "typeCustomer": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "07 Nguyễn Phong Sắc",
+      "id": 6
     }
   ],
   "services": [
@@ -180,7 +194,7 @@
       "pool": "90"
     }
   ],
-  "typeCustomer": [
+  "typeService": [
     {
       "id": 1,
       "name": "Villa"
@@ -194,7 +208,7 @@
       "name": "Room"
     }
   ],
-  "typesCustomer": [
+  "typeCustomer": [
     {
       "id": 1,
       "name": "Diamond"
@@ -218,13 +232,7 @@
   ],
   "contracts": [
     {
-      "contractNumber": "HD001",
-      "startDate": "2023-01-15",
-      "endDate": "2023-03-15",
-      "depositAmount": 5000000,
-      "totalPaymentAmount": 15000000
-    },
-    {
+      "id": 2,
       "contractNumber": "HD002",
       "startDate": "2023-02-10",
       "endDate": "2023-04-10",
@@ -232,32 +240,12 @@
       "totalPaymentAmount": 18000000
     },
     {
+      "id": 3,
       "contractNumber": "HD003",
       "startDate": "2023-03-05",
       "endDate": "2023-05-05",
       "depositAmount": 5500000,
       "totalPaymentAmount": 16500000
-    },
-    {
-      "contractNumber": "HD004",
-      "startDate": "2023-04-20",
-      "endDate": "2023-06-20",
-      "depositAmount": 7000000,
-      "totalPaymentAmount": 21000000
-    },
-    {
-      "contractNumber": "HD005",
-      "startDate": "2023-05-15",
-      "endDate": "2023-07-15",
-      "depositAmount": 4500000,
-      "totalPaymentAmount": 13500000
-    },
-    {
-      "contractNumber": "HD006",
-      "startDate": "2023-06-08",
-      "endDate": "2023-08-08",
-      "depositAmount": 6500000,
-      "totalPaymentAmount": 19500000
     }
   ]
 }

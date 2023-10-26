@@ -8,6 +8,7 @@ import {CreateBook} from "./components/CreateBook.jsx";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import EditBook from "./components/EditBook.jsx";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 
